@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/dgrijalva/jwt-go"
-	"github.com/go-ozzo/ozzo-routing"
+	"github.com/ZohraS/jwt-go"
+	"github.com/ZohraS/ozzo-routing"
 )
 
 // User is the key used to store and retrieve the user identity information in routing.Context
@@ -35,8 +35,8 @@ type BasicAuthFunc func(c *routing.Context, username, password string) (Identity
 //     "errors"
 //     "fmt"
 //     "net/http"
-//     "github.com/go-ozzo/ozzo-routing"
-//     "github.com/go-ozzo/ozzo-routing/auth"
+//     "github.com/ZohraS/ozzo-routing"
+//     "github.com/ZohraS/ozzo-routing/auth"
 //   )
 //   func main() {
 //     r := routing.New()
@@ -95,8 +95,8 @@ type TokenAuthFunc func(c *routing.Context, token string) (Identity, error)
 //     "errors"
 //     "fmt"
 //     "net/http"
-//     "github.com/go-ozzo/ozzo-routing"
-//     "github.com/go-ozzo/ozzo-routing/auth"
+//     "github.com/ZohraS/ozzo-routing"
+//     "github.com/ZohraS/ozzo-routing/auth"
 //   )
 //   func main() {
 //     r := routing.New()
@@ -152,8 +152,8 @@ var TokenName = "access-token"
 //     "errors"
 //     "fmt"
 //     "net/http"
-//     "github.com/go-ozzo/ozzo-routing"
-//     "github.com/go-ozzo/ozzo-routing/auth"
+//     "github.com/ZohraS/ozzo-routing"
+//     "github.com/ZohraS/ozzo-routing/auth"
 //   )
 //   func main() {
 //     r := routing.New()
@@ -223,9 +223,9 @@ func DefaultJWTTokenHandler(c *routing.Context, token *jwt.Token) error {
 //     "errors"
 //     "fmt"
 //     "net/http"
-//     "github.com/dgrijalva/jwt-go"
-//     "github.com/go-ozzo/ozzo-routing"
-//     "github.com/go-ozzo/ozzo-routing/auth"
+//     "github.com/ZohraS/jwt-go"
+//     "github.com/ZohraS/ozzo-routing"
+//     "github.com/ZohraS/ozzo-routing/auth"
 //   )
 //   func main() {
 //     signingKey := "secret-key"

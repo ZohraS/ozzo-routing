@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-ozzo/ozzo-routing"
+	"github.com/ZohraS/ozzo-routing"
 	"github.com/stretchr/testify/assert"
 )
 
